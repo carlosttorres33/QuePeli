@@ -5,12 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/primario"
     android:padding="8dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Peliculas Reproduciendo Ahora"
+        android:fontFamily="sans-serif-black"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:gravity="center"

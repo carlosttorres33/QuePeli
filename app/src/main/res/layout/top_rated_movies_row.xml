@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Películas Mejor Calificadas"
+        android:fontFamily="sans-serif-black"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"
