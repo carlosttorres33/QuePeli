@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.moviedetails.MovieDetailFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient" />
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_imageMovie"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iv_imageMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="333dp" />
+
+    <TextView
+        android:id="@+id/tv_textRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_baseline_calendar_today_24"
+        app:drawableTint="@color/white"
+        tools:text="12/02/2022"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/cv_imageMovie"
+        app:layout_constraintBottom_toTopOf="@id/tv_textLanguagea"
+        app:layout_constraintStart_toEndOf="@id/cv_imageMovie"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_textLanguagea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_baseline_language_24"
+        app:drawableTint="@color/white"
+        tools:text="Lenguage Esp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_textRelease"
+        app:layout_constraintBottom_toBottomOf="@id/fl_background"
+        app:layout_constraintStart_toEndOf="@id/cv_imageMovie"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="8dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/cv_imageMovie"
+        app:layout_constraintTop_toBottomOf="@id/fl_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/cv_imageMovie"
+        >
+
+        <TextView
+            android:id="@+id/tv_Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="7.1 (4231 Reviews)"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/cv_imageMovie"
+            app:layout_constraintStart_toEndOf="@id/cv_imageMovie"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawablePadding="8dp"/>
+
+        <RatingBar
+            android:id="@+id/rb_RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="10"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:rating="5.5"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:padding="16dp"
+        android:text="Movie Title"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. "
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
