@@ -119,6 +119,7 @@
             android:numStars="10"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:rating="5.5"
+            android:progressTint="#FFD700"
             />
 
     </LinearLayout>
@@ -131,6 +132,7 @@
         android:padding="16dp"
         android:text="Movie Title"
         android:gravity="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/guideline2"

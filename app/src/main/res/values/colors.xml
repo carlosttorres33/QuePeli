@@ -10,4 +10,5 @@
     <color name="primario">#ff4081</color>
     <color name="secundario">#ff80ab</color>
     <color name="secundario_claro">#ffb2dd</color>
+    <color name="background_claro">#fff6f4</color>
 </resources>

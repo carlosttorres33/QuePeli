@@ -9,6 +9,7 @@
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_baseline_bookmark_border_24.xml" value="0.1585" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1585" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1585" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.1585" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.1585" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1585" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/drawable/ic_que_peli_background.xml" value="0.1585" />
@@ -20,8 +21,10 @@
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/layout/movie_item.xml" value="0.536" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/layout/now_playing_row.xml" value="0.23052536231884058" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/layout/popular_movies_row.xml" value="0.26313405797101447" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/layout/splash_screen.xml" value="0.23052536231884058" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/layout/top_rated_movies_row.xml" value="0.26313405797101447" />
         <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/layout/upcoming_movie_row.xml" value="0.26313405797101447" />
+        <entry key="..\:/Documentos/AndroidStudioProjects/QuePeli/app/src/main/res/mipmap-anydpi-v26/ic_que_peli.xml" value="0.184" />
         <entry key="..\:/Users/kisam/Documents/ProyectosAndroid/QuePeli/app/src/main/res/drawable/gradient.xml" value="0.2505" />
         <entry key="..\:/Users/kisam/Documents/ProyectosAndroid/QuePeli/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.2505" />
         <entry key="..\:/Users/kisam/Documents/ProyectosAndroid/QuePeli/app/src/main/res/layout/activity_main.xml" value="0.22760416666666666" />
