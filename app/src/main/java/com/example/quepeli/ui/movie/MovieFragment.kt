@@ -10,8 +10,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
 import com.example.quepeli.R
 import com.example.quepeli.core.Resource
+import com.example.quepeli.data.local.AppDataBase
+import com.example.quepeli.data.local.LocalMovieDatSource
 import com.example.quepeli.data.model.Movie
-import com.example.quepeli.data.remote.MovieDataSource
+import com.example.quepeli.data.remote.RemoteMovieDataSource
 import com.example.quepeli.databinding.FragmentMovieBinding
 import com.example.quepeli.presentation.MovieViewModel
 import com.example.quepeli.presentation.MovieViewModelFactory
@@ -26,7 +28,8 @@ class MovieFragment : Fragment(R.layout.fragment_movie), MovieAdapter.OnMovieCli
     private lateinit var binding : FragmentMovieBinding
 
     private val viewModel by viewModels<MovieViewModel> { MovieViewModelFactory(MovieRepositoryImpl(
-        MovieDataSource(RetrofitClient.webservice)
+        RemoteMovieDataSource(RetrofitClient.webservice),
+        LocalMovieDatSource( AppDataBase.getDatabase(requireContext()).movieDao() )
     )) }
 
     private lateinit var concatAdapter : ConcatAdapter

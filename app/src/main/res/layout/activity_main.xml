@@ -37,6 +37,16 @@
 
     </LinearLayout>
 
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/sv_search"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/v_cabecera"-->
+<!--        app:queryHint="Buscar pelicula"-->
+<!--        app:iconifiedByDefault="false"-->
+<!--        android:background="@drawable/searckview_bg"-->
+<!--        />-->
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:layout_width="match_parent"

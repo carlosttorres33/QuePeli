@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.quepeli.core.BaseConcatHolder
 import com.example.quepeli.databinding.FragmentMovieDetailBinding
 import com.example.quepeli.databinding.NowPlayingRowBinding
-import com.example.quepeli.databinding.TopRatedMoviesRowBinding
 import com.example.quepeli.ui.movie.adapters.MovieAdapter
 
 class NowPlayingAdapter (private val moviesAdapter: MovieAdapter): RecyclerView.Adapter<BaseConcatHolder<*>>(){

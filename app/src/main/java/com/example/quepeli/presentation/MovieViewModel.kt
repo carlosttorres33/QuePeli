@@ -6,7 +6,6 @@ import androidx.lifecycle.liveData
 import com.example.quepeli.core.Resource
 import com.example.quepeli.repository.MovieRepository
 import kotlinx.coroutines.Dispatchers
-import okhttp3.Dispatcher
 import java.lang.Exception
 
 class MovieViewModel(private val repo: MovieRepository):ViewModel() {

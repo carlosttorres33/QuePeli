@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Peliculas Reproduciendo Ahora"
+        android:text="Peliculas En Cartelera"
         android:fontFamily="sans-serif-black"
         android:textStyle="bold"
         android:textColor="@color/black"
